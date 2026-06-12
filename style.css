@@ -1,0 +1,175 @@
+body{
+    background-image: url('../img/6_icon/ni05wp-sozai02.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;  /* 繰り返しを防ぐ */
+    background-position: center;
+}
+
+
+html {
+    font-size: 20px;
+}
+
+.logo{
+    width: 40%;
+    height: auto;
+}
+
+
+.splide {
+    max-width: 1000px;
+    margin: 50px auto; /* 画面の真ん中に寄せる */
+}
+.splide__slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* 画像の角を丸く*/
+}
+.splide__pagination li {
+    margin: 0 12px; /* ドットの左右の隙間を広げる設定 */
+}
+.splide__pagination {
+    bottom: -50px; /* ドットの上下の位置 */
+}
+.splide__pagination__page {
+    width: 17px;  /* ドットの横幅 */
+    height: 17px; /* ドットの縦幅 */
+    background: #ffffff; /* 選択されていないドットの色 */
+}
+.splide__pagination__page.is-active {
+    background: #ff4500; /* アクティブなドットの色 */
+    transform: scale(1.2); /* 選択中のドットの大きさ */
+}
+.splide__slide {
+    transform: scale(0.8); /* 両端の画像の大きさ*/
+    transition: transform 0.3s, opacity 0.3s; /* 大きさが変わるときのアニメーションを滑らかに */
+    opacity: 0.8; /* 少し薄暗くする */
+}
+.splide__slide.is-active {
+    transform: scale(1.0); /* 真ん中だけ1.0倍 */
+    opacity: 1;
+}
+
+
+.btn {
+    background-color: #ffffff;
+    color: #ff7b00;
+    border: 1px solid #ffffff;
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn.active {
+    background-color: #ff7b00;
+    color: #ffffff;
+    border: 1px solid #ff7b00;
+    font-size: 22px;
+}
+
+
+.event-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto;
+    
+    display: grid;
+    /* よこに4等分で並べる指定 */
+    grid-template-columns: repeat(4, 1fr); 
+    /* カード同士のすき間（たて・よこ 20px） */
+    gap: 20px; 
+    
+    width: 95%;        /* 全体の横幅 */
+    max-width: 1200px; /* 広がりすぎないための最大幅 */
+}
+.event-item {    
+    background-color: rgba(255, 255, 255, 0.9); /* 背景を白、不透明度 */
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+/* マウスを乗せたときに少し浮き上がる */
+.event-item:hover {
+    transform: translateY(-5px);
+}
+/* カードの中のリンクと画像・文字の調整 */
+.event-item a {
+    text-decoration: none; /* リンクの下線を消す */
+    color: #333;           /* 文字の色 */
+    display: block;
+}
+.event-item img {
+    width: 100%;       /* 枠の幅いっぱいに画像を広げる */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px; /* 画像と下の文字のすき間 */
+}
+/* JSでこのクラスがついた要素を非表示にする */
+.event-item.is-hidden {
+    display: none !important; /* 絞り込み時に確実に消すために !important を付与 */
+}
+/* JSでこのクラスがついた要素を非表示にする */
+.event-item.is-hidden {
+    display: none;
+}
+
+.popup-trigger {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+
+/* リスト側の文字デザインがボタン化で崩れるのを防ぐ */
+.event-button-style {
+    text-align: inherit;
+    color: #333;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+/* ポップアップ自体の見た目（すべて共通） */
+.service-dialog {
+    border: none;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 900px;
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ポップアップの後ろの背景を暗くする（共通） */
+.service-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dialog-content {
+    text-align: center;
+}
+
+/* 閉じるボタン（共通） */
+.close-btn {
+    background-color: #ff7b00;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.close-btn:hover {
+    background-color: #e06c00;
+}
+
+.btext{
+    font-weight: bold;
+    font-size: 30px;
+    color: #ff7b00; 
+    margin-top: 0;
+}
