@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/6_icon/ni05wp-sozai01.png">
+    <title>まねきねこイベント＆サービス</title>
+
+    <link rel="stylesheet" href="https://unpkg.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body>
+    <br>
+    <center><img src="./img/企業ロゴ01.png" class="logo" alt="タイトル"></center>
+    <br>
+
+    <!-- カルーセルの全体枠（外側） -->
+    <div class="splide" aria-label="サービス">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide">
+                <button type="button" class="popup-trigger" data-popup="popup-app">
+                    <img src="./img/4_service/ni05wp-sozai03.png" alt="まねきねこのアプリ">
+                </button>
+            </li>
+            <li class="splide__slide">
+                <button type="button" class="popup-trigger" data-popup="popup-mafu">
+                    <img src="./img/4_service/ni05wp-sozai04.png" alt="まねきねこのフリータイム">
+                </button>
+            </li>
+            <li class="splide__slide">
+                <button type="button" class="popup-trigger" data-popup="popup-asauta">
+                    <img src="./img/4_service/ni05wp-sozai05.png" alt="朝うた">
+                </button>
+            </li>
+            <li class="splide__slide">
+                <button type="button" class="popup-trigger" data-popup="popup-ebo">
+                    <img src="./img/4_service/ni05wp-sozai06.png" alt="E-bo">
+                </button>
+            </li>
+            <li class="splide__slide">
+                <button type="button" class="popup-trigger" data-popup="popup-okashi">
+                    <img src="./img/4_service/ni05wp-sozai07.png" alt="おかしバー">
+                </button>
+            </li>
+            <li class="splide__slide">
+                <button type="button" class="popup-trigger" data-popup="popup-gindaco">
+                    <img src="./img/4_service/ni05wp-sozai08.png" alt="ギンダコハイボール酒場">
+                </button>
+            </li>
+            <li class="splide__slide">
+                <button type="button" class="popup-trigger" data-popup="popup-mirapon">
+                    <img src="./img/4_service/ni05wp-sozai09.png" alt="ミラPon!">
+                </button>
+            </li>
+            <li class="splide__slide">
+                <button type="button" class="popup-trigger" data-popup="popup-livebox">
+                    <img src="./img/4_service/ni05wp-sozai10.png" alt="LIVEBOX">
+                </button>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+    <br><br>
+
+    <div class="filter-buttons">
+        <center>
+            <button class="btn active" data-target="all">ALL</button>
+            <button class="btn" data-target="college">大学生限定</button>
+            <button class="btn" data-target="food">食事サービス</button>
+            <button class="btn" data-target="digital">デジタルサービス</button>
+            <button class="btn" data-target="event">イベント</button>
+        </center>
+    </div>
+
+
+    <ul class="event-list">
+        <li class="event-item" data-category="digital">
+            <button type="button" class="popup-trigger event-button-style" data-popup="popup-app">
+                <center><img src="./img/4_service/ni05wp-sozai11.png" alt="まねきねこのアプリ"><p>まねきねこのアプリ</p></center>
+            </button>
+        </li>
+        <li class="event-item" data-category="college">
+            <button type="button" class="popup-trigger event-button-style" data-popup="popup-mafu">
+                <center><img src="./img/4_service/ni05wp-sozai12.png" alt="まねきねこのフリータイム"><p>まねきねこのフリータイム</p></center>
+            </button>
+        </li>
+        <li class="event-item" data-category="all">
+            <button type="button" class="popup-trigger event-button-style" data-popup="popup-asauta">
+                <center><img src="./img/4_service/ni05wp-sozai13.png" alt="朝うた"><p>朝うた</p></center>
+            </button>
+        </li>
+        <li class="event-item" data-category="digital">
+            <button type="button" class="popup-trigger event-button-style" data-popup="popup-ebo">
+                <center><img src="./img/4_service/ni05wp-sozai14.png" alt="E-bo"><p>E-bo</p></center>
+            </button>
+        </li>
+        <li class="event-item" data-category="food">
+            <button type="button" class="popup-trigger event-button-style" data-popup="popup-okashi">
+                <center><img src="./img/4_service/ni05wp-sozai15.png" alt="おかしバー"><p>おかしバー</p></button>
+        </li>
+        <li class="event-item" data-category="food">
+            <button type="button" class="popup-trigger event-button-style" data-popup="popup-gindaco">
+                <center><img src="./img/4_service/ni05wp-sozai16.png" alt="ギンダコハイボール酒場"><p>ギンダコハイボール酒場</p></center>
+            </button>
+        </li>
+        <li class="event-item" data-category="digital">
+            <button type="button" class="popup-trigger event-button-style" data-popup="popup-mirapon">
+                <center><img src="./img/4_service/ni05wp-sozai17.png" alt="ミラPon!"><p>ミラPon!</p></center>
+            </button>
+        </li>
+        <li class="event-item" data-category="digital">
+            <button type="button" class="popup-trigger event-button-style" data-popup="popup-livebox">
+                <center><img src="./img/4_service/ni05wp-sozai18.png" alt="LIVEBOX"><p>LIVEBOX</p></center>
+            </button>
+        </li>
+        <li class="event-item" data-category="food event">
+            <button type="button" class="popup-trigger event-button-style" data-popup="popup-kakigori">
+                <center><img src="./img/5_event/ni05wp-sozai19.jpg" alt="台湾かき氷"><p>台湾かき氷</p></center>
+            </button>
+        </li>
+        <li class="event-item" data-category="food event">
+            <button type="button" class="popup-trigger event-button-style" data-popup="popup-hawaiian">
+                <center><img src="./img/5_event/ni05wp-sozai20.png" alt="ハワイアンフェア"><p>ハワイアンフェア</p></center>
+            </button>
+        </li>
+        <li class="event-item" data-category="food event">
+            <button type="button" class="popup-trigger event-button-style" data-popup="popup-enkai">
+                <center><img src="./img/5_event/ni05wp-sozai21.jpg" alt="Z飯"><p>まねきのZ飯</p></center>
+            </button>
+        </li>
+    </ul>
+
+    <dialog id="popup-app" class="service-dialog">
+        <div class="dialog-content">
+            <p class="btext">カラオケまねきねこ公式アプリを<br>ダウンロードしてお得に利用しよう！</p>
+            <p>
+                <h3>POINT1：まねちゅ～</h3>
+                入室伝票のQRコードを読み取るだけで、スマホから簡単にお食事やドリンクのオーダーが可能。<br>
+                <br>
+                <h3>POINT2：まねきねこポイント</h3>
+                お得なクーポンと交換できる「まねきねこポイント」が貯まる！<br>
+                ※100円⇒1ポイント<br>
+                <br>
+                <h3>POINT3：ランクアップシステム</h3>
+                来店回数やご利用金額によってランクアップ。<br>
+                お会計金額が最大30%OFFに！<br>
+                <br>
+                <h3>POINT4：ゲーム</h3>
+                まねっきーをたくさん走らせてポイントをゲットしよう！<br>
+            </p>
+            <button type="button" class="close-btn">閉じる</button>
+        </div>
+    </dialog>
+
+    <dialog id="popup-mafu" class="service-dialog">
+        <div class="dialog-content">
+            <p class="btext">大学生・短大生・専門学生にお得なフリータイムが登場！！</p>
+            <p>
+                <h3>日▶木曜日の18:00以降はフリータイム料金が330円(税込)～<br>さらにドリンクバーが無料に！</h3>
+                ・本キャンペーンは利用者全員のアプリ登録が必要となります。<br>
+                ・２名以上、利用者全員の学生証の提示が必要となります。<br>
+                ・料金は店舗によって異なります。<br>
+            </p>
+            <button type="button" class="close-btn">閉じる</button>
+        </div>
+    </dialog>
+
+    <dialog id="popup-asauta" class="service-dialog">
+        <div class="dialog-content">
+            <p class="btext">朝うた</p>
+            <p>
+                <h3>「歌って健康」を合言葉に朝うたを実施中です。時間は開店から12時迄 。</h3>
+                ・有料ワンドリンクオーダー制または、ドリンクバー付きのいずれかのコースとなります。<br>
+                ・開店より午前10時59分までのご入室に限り、料金は12時まで適用いたします。<br>
+                ・60分からご利用頂けます。<br>
+                ・午前11時以降のご入室には適用されませんのでご注意ください。<br></p>
+            <button type="button" class="close-btn">閉じる</button>
+        </div>
+    </dialog>
+
+    <dialog id="popup-ebo" class="service-dialog">
+        <div class="dialog-content">
+            <p class="btext">E-bo</p>
+            <p>
+                <p class="btext">業界初！本人音源でのカラオケ、ゲーム、動画鑑賞が楽しめる<br>E-boが登場！</p>
+                <br>
+                <h3>1.原曲の伴奏でカラオケ<br>
+                2.アーティストとデュエット！？<br>
+                3.新体験「かけあいモード」<br>
+                4.個室・高品質機材での視聴</h3>
+                <br>
+                さらにエンタメコンテンツも搭載！<br>
+                ・スイカゲーム カラオケまねきねこver.<br>
+                ・桃太郎電鉄 ～昭和 平成 令和も定番！～for E-bo エンタメボックス<br>
+                ・WOWOWオンデマンド（スポーツコンテンツ）<br>
+                ・ミラーリング<br>
+            </p>
+            <button type="button" class="close-btn">閉じる</button>
+        </div>
+    </dialog>
+
+    <dialog id="popup-okashi" class="service-dialog">
+        <div class="dialog-content">
+            <p class="btext">おかしバー</p>
+            <p>
+                <h3>カラオケまねきねこが提供する、おかし食べ放題サービス！<br>ルーム料金＋550円でおかしが食べ放題！（ルームご利用時間内であれば時間無制限）</h3>
+                <br>
+                メニュー<br>
+                ・わたあめ
+                ・パンケーキ
+                ・ポップコーン
+                ・グミ、チョコ
+            </p>
+            <button type="button" class="close-btn">閉じる</button>
+        </div>
+    </dialog>
+
+    <dialog id="popup-gindaco" class="service-dialog">
+        <div class="dialog-content">
+            <p class="btext">ギンダコハイボール酒場</p>
+            <p>
+                <h3>まねきねこで銀だこが食べられる！<br>現在全国4店舗のまねきねこで開催中！</h3>
+                <br>
+                開催店舗<br>
+                ・まねきねこ横浜西口4号店ギンダコハイボール酒場横浜西口店<br>
+                ・まねきねこ静岡本店1階ギンダコハイボール横丁静岡両替町店<br>
+                ・まねきねこ徳山平和通り店ギンダコハイボール酒場徳山平和通り店<br>
+                ・まねきねこ佐世保京町店ギンダコハイボール酒場佐世保京町店<br>
+            </p>
+            <button type="button" class="close-btn">閉じる</button>
+        </div>
+    </dialog>
+
+    <dialog id="popup-mirapon" class="service-dialog">
+        <div class="dialog-content">
+            <p class="btext">ミラPon!</p>
+            <p>
+                <h3>まねきねこが映画館に！</h3>
+                大音響でも周りを気にせず、イイ音で観たい・・<br>
+                ワイドな大画面で迫力ある映像を楽しみたい・・<br>
+                <br>
+                <h3>防音環境でライブ参戦！</h3>
+                ライブやパブリックビューイングにに行きたいけど大人数の会場は不安・・<br>
+                気の合う仲間と一緒に推しを応援したい・・<br>
+                <br>
+                <h3>みんなで迫力ゲームプレイ！</h3>
+                ついつい大きな声になりがちなゲームを気兼ねなくプレイしたい・・<br>
+                実況などの声を聞かれたくない・・<br>
+                <br>
+                <h3>快適空間でリモートワーク！</h3>
+                カフェや自宅では周りが気になって集中できない・・<br>
+                自宅やモバイルWi-fiでは会議が途切れがち・・<br>
+            </p>
+            <button type="button" class="close-btn">閉じる</button>
+        </div>
+    </dialog>
+
+    <dialog id="popup-livebox" class="service-dialog">
+        <div class="dialog-content">
+            <p class="btext">LIVEBOX</p>
+            <p>
+                <h3>まねきねこでライブビューイング！</h3>
+                <br>
+                カラオケまねきねこ全国600店舗超！<br>
+                3000ルームでライブビューイング視聴OK！<br>
+                ライブ、イベント、講演会、and more...<br>
+            </p>
+            <button type="button" class="close-btn">閉じる</button>
+        </div>
+    </dialog>
+
+    <dialog id="popup-kakigori" class="service-dialog">
+        <div class="dialog-content">
+            <p class="btext">台湾かき氷</p>
+            <p>
+                <h3>5/23～期間限定でまねきねこに台湾かき氷が登場！</h3>
+                口に入れた瞬間にふわっと溶ける新食感かき氷🍧<br>
+                中にはバニラアイスとホイップクリームが入っています🍨<br>
+                フレーバーは「ストロベリーミルク」と、「マンゴーミルク」の2種類<br>
+                暑い夏のリフレッシュにいかがですか？<br>
+                <br>
+                全国220店舗で開催中
+                </p>
+            <button type="button" class="close-btn">閉じる</button>
+        </div>
+    </dialog>
+
+    <dialog id="popup-hawaiian" class="service-dialog">
+        <div class="dialog-content">
+            <p class="btext">ハワイアンフェア</p>
+            <p>
+                <h3>4/27～夏はもうすぐ！『ALOHA ! ハワイアンフェア』が開催！</h3>
+                <br>
+                ハワイのローカルフードを中心に、南国気分が存分に体験できるユニークな商品が新登場！<br>
+                『ガーリックシュリンプ』や、『ココナッツフライドチキン』など<br>リゾート感あふれるラインナップ！<br>
+                ハワイのドーナツ 「ココナッツマラサダアイスサンド」や、<br>ひんやり美味しい「HAWAIIAN シェイブアイス」などなど、勢ぞろい！<br>
+                <br>
+                「アロハ」な体験を是非お楽しみください。<br>
+            </p>
+            <button type="button" class="close-btn">閉じる</button>
+        </div>
+    </dialog>
+
+    <dialog id="popup-enkai" class="service-dialog">
+        <div class="dialog-content">
+            <p class="btext">まねきのZ飯！</p>
+            <p>
+                <h3>カラオケまねきねこ 「まねきのZ飯！」に新メニューが登場</h3>
+                <br>
+                高校生・大学生・短大生・専門学生限定！<br>
+                あの「まねきのZ飯」に待望の新メニュー登場！<br>
+                お腹いっぱい、エネルギーチャージできるボリューム満点なメニューで、学びパワーを注入！！<br>
+                <br>
+                話題の「貧乏らーめん」に続く、貧乏シリーズ第二弾！「BIG ! 貧乏Mバーガー」<br>
+                食べ応え抜群の「BIG ! 貧乏Mバーガー」<br>
+                <br>
+                「貧乏らーめん」には味変で楽しめるブースト調味料、<br>
+                「ガリバタパンチの素」と「しびれ辛ウマとうがらしの素」が緊急参戦！！<br>
+                <br>
+                貧乏らーめんを半チャーハンと一緒に定食で楽しめる「貧乏半チャンセット」<br>
+                <br>
+                そのほかにも、みんなで楽しく楽しめる、まねっきー型のチキンナゲット「にゃげっと」や、<br>
+                いつでも揚げたておやつの定番「揚げパン」に「シュガー味」も仲間入り！<br>
+                <br>
+            </p>
+            <button type="button" class="close-btn">閉じる</button>
+        </div>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+    <!-- Splideを動かすためのJS本体を読み込む -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+
+</html>
